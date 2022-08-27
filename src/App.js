@@ -38,16 +38,21 @@ function App() {
 
   return (
     <>
-    <h1>Temperature Translation</h1>
+    <h1 className='header'>Temperature Conversions</h1>
 
-    <input onChange={test} type='text' name='fahrenheit' id='fahrenheit'></input>
-    <p>°F: {fahrenheit}</p>
-    <br/>
-    <input onChange={test2} type='text' name='celsius' id='celsius'></input>
-    <p>°C: {celsius}</p>
-    <br/>
-    <input onChange={test3} type='text' name='kelvin' id='kelvin'></input>
-    <p>°K: {kelvin}</p>
+    <div className='content'>
+      <label>Fahrenheit: </label>
+      <input onChange={test} type='text' name='fahrenheit' id='fahrenheit'></input>
+      <p className='degree'>°F: {fahrenheit}</p>
+      <br/>
+      <label>Celsius: </label>
+      <input onChange={test2} type='text' name='celsius' id='celsius'></input>
+      <p className='degree'>°C: {celsius}</p>
+      <br/>
+      <label>Kelvin: </label>
+      <input onChange={test3} type='text' name='kelvin' id='kelvin'></input>
+      <p className='degree'>°K: {kelvin}</p>
+    </div>
     </>
   );
 }
