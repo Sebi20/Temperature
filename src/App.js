@@ -7,18 +7,15 @@ function App() {
   const[celsius, setCelsius] = useState(0);
   const[kelvin, setKelvin] = useState(0);
 
-  function test(){
+  function getFahrenheit(){
     let fDeg = $("#fahrenheit").val();
     
     setFahrenheit(fDeg);
     setCelsius(((fDeg - 32)/1.8000).toFixed(2));
     setKelvin(((fDeg - 32) * (5/9) + 273.15).toFixed(2));
-
-    
-
   }
 
-  function test2(){
+  function getCelsius(){
     let cDeg = $("#celsius").val();
     
     setCelsius(cDeg);
@@ -28,7 +25,7 @@ function App() {
     
   }
 
-  function test3(){
+  function getKelvin(){
     let kDeg = $("#kelvin").val();
     
     setKelvin(kDeg);
@@ -99,15 +96,15 @@ function App() {
 
       <div className='content'>
         <label>Fahrenheit: </label>
-        <input onChange={test} type='text' name='fahrenheit' id='fahrenheit'></input>
+        <input onChange={getFahrenheit} type='text' name='fahrenheit' id='fahrenheit'></input>
         <p className='degree'>°F: {fahrenheit}</p>
         <br/>
         <label>Celsius: </label>
-        <input onChange={test2} type='text' name='celsius' id='celsius'></input>
+        <input onChange={getCelsius} type='text' name='celsius' id='celsius'></input>
         <p className='degree'>°C: {celsius}</p>
         <br/>
         <label>Kelvin: </label>
-        <input onChange={test3} type='text' name='kelvin' id='kelvin'></input>
+        <input onChange={getKelvin} type='text' name='kelvin' id='kelvin'></input>
         <p className='degree'>°K: {kelvin}</p>
       </div>
     </>
