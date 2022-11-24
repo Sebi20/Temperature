@@ -3,13 +3,13 @@
 }
 
 .content{
-  background-color: rgba(41, 41, 10, 0.177);
+  background-color: rgba(166, 166, 163, 0.177);
   width: 330px;
   padding: 20px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(255, 102, 0);
+  color: rgba(226, 223, 213, 0.684);
   font-size: larger;
 }
 
@@ -23,5 +23,5 @@
 .header{
   margin-left: 50px;
   margin-bottom: 35px;
-  color: rgb(255, 102, 0);
+  color: rgb(166, 146, 146);
 }
